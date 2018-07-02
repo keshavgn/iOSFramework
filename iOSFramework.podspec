@@ -19,13 +19,13 @@ Pod::Spec.new do |s|
 
   s.license      = { :type => "MIT", :file => "LICENSE" }
 
-  s.author             = { "Keshav" => "keshavgn@gmail.com" }
+  s.author       = { "Keshav" => "keshavgn@gmail.com" }
 
   s.platform     = :ios, "10.0"
 
   s.source       = { :git => "https://github.com/keshavgn/iOSFramework.git", :tag => "#{s.version}" }
 
   s.source_files  = "iOSFramework", "iOSFramework/**/*.{swift}"
-  #s.resources = "iOSFramework/**/*.{png,jpeg,jpg,storyboard,xib}"
+  #s.resources    = "iOSFramework/**/*.{png,jpeg,jpg,storyboard,xib}"
 
 end
