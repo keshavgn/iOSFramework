@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		261A316A318E5F5BB653E9ED /* Pods_iOSFrameworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41C17C21C1C950EF0D5228A /* Pods_iOSFrameworkTests.framework */; };
+		4012E68221073E2F00022D23 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4012E68121073E2F00022D23 /* Test.swift */; };
 		4082DD8A206E7A2A00B0AECD /* iOSFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4082DD80206E7A2A00B0AECD /* iOSFramework.framework */; };
 		4082DD8F206E7A2A00B0AECD /* iOSFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4082DD8E206E7A2A00B0AECD /* iOSFrameworkTests.swift */; };
 		4082DD91206E7A2A00B0AECD /* iOSFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 4082DD83206E7A2A00B0AECD /* iOSFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		03C46416FE54005C636A092A /* Pods-iOSFrameworkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSFrameworkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSFrameworkTests/Pods-iOSFrameworkTests.debug.xcconfig"; sourceTree = "<group>"; };
 		13157962AEB9154F05DB3E36 /* Pods-iOSFrameworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSFrameworkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSFrameworkTests/Pods-iOSFrameworkTests.release.xcconfig"; sourceTree = "<group>"; };
+		4012E68121073E2F00022D23 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		4082DD80206E7A2A00B0AECD /* iOSFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iOSFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4082DD83206E7A2A00B0AECD /* iOSFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSFramework.h; sourceTree = "<group>"; };
 		4082DD84206E7A2A00B0AECD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 			children = (
 				4082DD83206E7A2A00B0AECD /* iOSFramework.h */,
 				4082DD84206E7A2A00B0AECD /* Info.plist */,
+				4012E68121073E2F00022D23 /* Test.swift */,
 			);
 			path = iOSFramework;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4012E68221073E2F00022D23 /* Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,6 +466,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BBE7C096280FE8ECEEF54A92 /* Pods-iOSFramework.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -475,6 +480,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.keshav.iOSFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -484,6 +490,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9C71220C7096CC7BAC160310 /* Pods-iOSFramework.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -506,6 +513,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 03C46416FE54005C636A092A /* Pods-iOSFrameworkTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YZE659Q7F3;
 				INFOPLIST_FILE = iOSFrameworkTests/Info.plist;
@@ -521,6 +529,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 13157962AEB9154F05DB3E36 /* Pods-iOSFrameworkTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YZE659Q7F3;
 				INFOPLIST_FILE = iOSFrameworkTests/Info.plist;
