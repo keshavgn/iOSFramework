@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "iOSFrameworkKit"
+  s.name         = "iOSFramework"
   s.version      = "0.1.0"
   s.summary      = "iOSFramework is a personal reposity which contains resuable classes"
   s.requires_arc = true
